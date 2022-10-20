@@ -6,12 +6,21 @@
     <title>Coronavirus Tracker Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 
 <body>
 
+<h1>Coronavirus Tracker Application</h1>
+<p>This application lists the current number of cases reported across the globe</p>
 <!--<p th:text="${locationStats}"></p>-->
 
+<div class="jumbotron">
+    <h1 class="display-4" th:text= "${totalReportedCases}"></h1>
+    <p class="lead">Total cases reported as of today</p>
+</div>
+
+<div class = "container">
 <table>
     <tr>
         <th>State</th>
@@ -24,7 +33,7 @@
         <td th:text="${locationstat.latestTotalCases}">0</td>
     </tr>
 </table>
-
+</div>
 </body>
 
 </html>
