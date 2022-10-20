@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Tracker</title>
+    <title>Coronavirus Tracker Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 </head>
+
 <body>
-<h1>Coronavirus Tracker</h1>
-<p>Test 1</p>
+
+<p th:text="${locationStats}"></p>
+
 </body>
+
 </html>

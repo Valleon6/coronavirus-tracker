@@ -2,6 +2,8 @@ package com.valleon.coronavirustracker.services;
 
 import com.valleon.coronavirustracker.models.LocationStats;
 import jakarta.annotation.PostConstruct;
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -19,6 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Getter
+@Setter
 public class CoronaVirusDataService {
 
     private static String VIRUS_DATA_URL= "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv";
