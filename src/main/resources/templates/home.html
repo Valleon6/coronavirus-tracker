@@ -21,16 +21,20 @@
 </div>
 
 <div class = "container">
-<table>
+<table class = "table">
     <tr>
         <th>State</th>
         <th>Country</th>
         <th>Total cases reported</th>
+        <th>Changes since last day</th>
     </tr>
+
     <tr th:each="locationstat : ${locationStats}">
         <td th:text="${locationstat.state}"></td>
         <td th:text="${locationstat.country}"></td>
         <td th:text="${locationstat.latestTotalCases}">0</td>
+        <td th:text="${locationstat.diffFromPrevDay}">0</td>
+
     </tr>
 </table>
 </div>
