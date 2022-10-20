@@ -1,7 +1,7 @@
 # coronavirus-tracker
 
 Technologies Used
-Tools
+
     Spring Boot
     Thymeleaf
     Git
